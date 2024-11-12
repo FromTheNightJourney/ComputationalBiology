@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.andrew-fullpage {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.andrew-tophalf,
+.andrew-bottomhalf {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.andrew-lefthalf,
+.andrew-righthalf {
+  background-color: lightgrey;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.andrew-graphcontainer {
+  background-color: grey;
+  margin: 5px;
+  gap: 5px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.andrew-graphtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.andrew-graph {
+  height: 300px;
+}
+
+.andrew-textinfocontainer {
+  background-color: grey;
+  margin: 5px;
+  gap: 5px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.andrew-textinfo {
+  height: 75%;
+  display: flex;
+  align-items: center;
+  font-size: 75px;
+}
+
+.andrew-textinfobutton {
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.andrew-textinfobutton:hover {
+  background-image: url("../../Assets/AMONGUS.gif");
+}
+
+.andrew-popupfullpage {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+
+.andrew-popupcontainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 50%;
+  min-width: 350px;
+  height: 50%;
+  background-color: white;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.andrew-popuptop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.andrew-popuptoptitle {
+  padding: 10px 0px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.x {
+  width: 30px;
+  height: 30px;
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.x:hover {
+  background-color: red;
+  color: white;
+}
+
+.andrew-popupcontent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0px 10px;
+  gap: 10px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.andrew-popupbottom {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+
+.andrew-popupbutton {
+  padding: 5px 20px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: darkgreen;
+  transition: background-color 0.3s ease;
+}
+
+.andrew-popupbutton:hover {
+  background-color: rgb(0, 145, 31);
+}
+
+.andrew-dropdownselect:focus {
+  border: 1px solid #707070;
+  outline: none;
+}
